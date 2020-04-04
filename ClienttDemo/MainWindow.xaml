@@ -1,0 +1,20 @@
+﻿<Window x:Class="ClienttDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienttDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="GetSum" Content="Get Sum" HorizontalAlignment="Left" Margin="59,189,0,0" VerticalAlignment="Top" Width="120" Click="GetSum_Click"/>
+        <TextBox x:Name="txtN1" HorizontalAlignment="Left" Margin="59,94,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtN2" HorizontalAlignment="Left" Margin="59,137,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblRis" Content="0" HorizontalAlignment="Left" Margin="59,259,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <TextBox x:Name="txtN3" HorizontalAlignment="Left" Margin="236,94,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtN4" HorizontalAlignment="Left" Margin="236,137,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="GetSubtraction" Content="Get Subtraction" HorizontalAlignment="Left" Margin="236,189,0,0" VerticalAlignment="Top" Width="120" Click="GetSubtraction_Click"/>
+        <Label x:Name="lblris" Content="0" HorizontalAlignment="Left" Margin="236,259,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
