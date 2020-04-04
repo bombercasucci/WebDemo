@@ -33,12 +33,24 @@ namespace ClienttDemo
             int a = Convert.ToInt32(txtN1.Text);
             int b = Convert.ToInt32(txtN2.Text);
             HttpClient client = new HttpClient();
-            string uri = $"https://localhost:44353/api/Operations/GetSum?a=122&b={b}";
+            string uri = $"https://localhost:44353/api/Operations/GetSum?a={a}&b={b}";
             HttpResponseMessage response = await client.GetAsync(uri);
             string content = await response.Content.ReadAsStringAsync();
             ris = JsonConvert.DeserializeObject<int>(content);
             Dispatcher.Invoke(() => lblRis.Content = ris);
+        }
 
+        private async void GetSubtraction_Click(object sender, RoutedEventArgs e)
+        {
+            double ris = 0;
+            int a = Convert.ToInt32(txtN3.Text);
+            int b = Convert.ToInt32(txtN4.Text);
+            HttpClient client = new HttpClient();
+            string uri = $"https://localhost:44353/api/Operations/GetSum?a={a}&b={b}";
+            HttpResponseMessage response = await client.GetAsync(uri);
+            string content = await response.Content.ReadAsStringAsync();
+            ris = JsonConvert.DeserializeObject<int>(content);
+            Dispatcher.Invoke(() => lblris.Content = ris);
         }
     }
 }
